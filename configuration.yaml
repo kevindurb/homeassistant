@@ -1,0 +1,44 @@
+---
+homeassistant:
+  name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
+  unit_system: imperial
+  time_zone: America/Denver
+
+config:
+frontend:
+history:
+logbook:
+map:
+person:
+system_health:
+ios:
+stream:
+notify:
+mobile_app:
+
+camera: !include cameras.yaml
+
+simplisafe:
+  accounts:
+    - username: !secret simplisafe_username
+      password: !secret simplisafe_password
+      code: !secret simplisafe_code
+
+weather:
+  platform: darksky
+  api_key: !secret darksky_api_key
+
+zwave:
+  usb_path: /dev/ttyUSB0
+
+zha:
+  usb_path: /dev/ttyUSB1
+  database_path: /config/zigbee.db
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+zone: !include zones.yaml

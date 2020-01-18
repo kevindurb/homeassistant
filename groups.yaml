@@ -1,0 +1,14 @@
+---
+kitchen_lights:
+  name: Kitchen Lights
+  entities:
+    - light.ledvance_ed070400_1
+    - light.ledvance_27fd0300_1
+    - light.ledvance_d5f60300_1
+    - light.ledvance_71f70300_1
+all_people:
+  name: All People
+  entities:
+    - person.kevin
+    - person.autumn
+    - person.guest
