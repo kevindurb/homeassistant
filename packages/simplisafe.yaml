@@ -1,0 +1,6 @@
+---
+simplisafe:
+  accounts:
+    - username: !secret simplisafe_username
+      password: !secret simplisafe_password
+      code: !secret simplisafe_code

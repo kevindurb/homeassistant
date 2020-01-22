@@ -1,0 +1,5 @@
+---
+platform: mjpeg
+name: "Backyard Camera"
+still_image_url: "http://192.168.0.19:8080/{{ shinobi_api_key }}/jpeg/Tlyusm5HOn/camera01/s.jpg"
+mjpeg_url: "http://192.168.0.19:8080/{{ shinobi_api_key }}/mjpeg/Tlyusm5HOn/camera01"
