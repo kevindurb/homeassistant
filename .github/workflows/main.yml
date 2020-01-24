@@ -8,8 +8,8 @@ jobs:
       volumes:
         - /:/config
     steps:
-      - name: Move stubs into config
-        run: mv /config/.stubs/* /config
-        
+      - name: Move fake secrets into config
+        run: mv /config/.stubs/secrets.yaml /config/secrets.yaml
+
       - name: Check config
         run: python -m homeassistant --script check_config --config /config
