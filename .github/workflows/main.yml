@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Copy config into place
-        run: cp -r $GITHUB_WORKSPACE /config
+        run: cp -r $GITHUB_WORKSPACE/homeassistant /config
 
       - name: Show contents of config
         run: ls -la /config
