@@ -3,18 +3,17 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: homeassistant/home-assistant:stable
-      volumes:
-        - $GITHUB_WORKSPACE:/github
     steps:
       - uses: actions/checkout@v2
-
-      - name: Move config into correct spot
-        run: mv /github/homeassistant /config
+        path: 'config'
 
       - name: Move fake secrets into config
-        run: mv /config/.stubs/secrets.yaml /config/secrets.yaml
+        run: mv ./config/.stubs/secrets.yaml ./config/secrets.yaml
 
       - name: Check config
         run: python -m homeassistant --script check_config --config /config
+        services:
+          image: homeassistant/home-assistant:stable
+          volumes:
+            - $GITHUB_WORKSPACE/config:/config
+          options: --entrypoint ""
