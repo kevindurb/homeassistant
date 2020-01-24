@@ -1,5 +1,5 @@
 ---
 platform: mjpeg
 name: "Master Bedroom Camera"
-still_image_url: "http://192.168.0.19:8080/{{ shinobi_api_key }}/jpeg/Tlyusm5HOn/camera02/s.jpg"
-mjpeg_url: "http://192.168.0.19:8080/{{ shinobi_api_key }}/mjpeg/Tlyusm5HOn/camera02"
+still_image_url: !secret master_bedroom_still_url
+mjpeg_url: !secret master_bedroom_mjpeg_url
