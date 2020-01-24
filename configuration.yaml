@@ -1,3 +1,9 @@
 ---
 homeassistant:
+  name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
+  unit_system: imperial
+  time_zone: America/Denver
   packages: !include_dir_named packages
