@@ -7,8 +7,9 @@ jobs:
       image: homeassistant/home-assistant:stable
     steps:
       - uses: actions/checkout@v2
-        with:
-          path: '/config'
+
+      - name: Move config into place
+        run: mv $GITHUUB_WORKSPACE/homeassistant /config
 
       - name: Move fake secrets into config
         run: mv /config/.stubs/secrets.yaml /config/secrets.yaml
