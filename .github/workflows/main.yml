@@ -9,10 +9,13 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Copy config into place
-        run: cp -r $GITHUB_WORKSPACE/homeassistant /config
+        run: cp -r $GITHUB_WORKSPACE /config
 
-      - name: Move fake secrets into config
-        run: mv /config/.stubs/secrets.yaml /config/secrets.yaml
+      - name: Show contents of config
+        run: ls -la /config
 
-      - name: Check config
-        run: python -m homeassistant --script check_config --config /config
+      # - name: Move fake secrets into config
+      #   run: mv /config/.stubs/secrets.yaml /config/secrets.yaml
+
+      # - name: Check config
+      #   run: python -m homeassistant --script check_config --config /config
