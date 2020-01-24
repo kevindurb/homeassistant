@@ -6,8 +6,13 @@ jobs:
     container:
       image: homeassistant/home-assistant:stable
       volumes:
-        - /:/config
+        - $GITHUB_WORKSPACE:/github
     steps:
+      - uses: actions/checkout@v2
+
+      - name: Move config into correct spot
+        run: mv /github /config
+
       - name: Move fake secrets into config
         run: mv /config/.stubs/secrets.yaml /config/secrets.yaml
 
