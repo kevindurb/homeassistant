@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Move config into correct spot
-        run: mv /github /config
+        run: mv /github/homeassistant /config
 
       - name: Move fake secrets into config
         run: mv /config/.stubs/secrets.yaml /config/secrets.yaml
