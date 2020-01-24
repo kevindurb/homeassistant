@@ -11,11 +11,8 @@ jobs:
       - name: Copy config into place
         run: cp -R $GITHUB_WORKSPACE/. /config/
 
-      - name: Show contents of config
-        run: ls -la /config
-
       - name: Move fake secrets into config
         run: mv /config/.stubs/secrets.yaml /config/secrets.yaml
 
       - name: Check config
-        run: python -m homeassistant --script check_config --config /config
+        run: python -m homeassistant --script check_config --config /config --files
