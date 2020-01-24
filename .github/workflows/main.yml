@@ -1,0 +1,15 @@
+name: CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: homeassistant/home-assistant:stable
+      volumes:
+        - /:/config
+    steps:
+      - name: Move stubs into config
+        run: mv /config/.stubs/* /config
+        
+      - name: Check config
+        run: python -m homeassistant --script check_config --config /config
