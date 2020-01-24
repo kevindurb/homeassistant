@@ -8,8 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Move config into place
-        run: mv $GITHUUB_WORKSPACE/homeassistant /config
+      - name: Copy config into place
+        run: cp -r $GITHUB_WORKSPACE /config
 
       - name: Move fake secrets into config
         run: mv /config/.stubs/secrets.yaml /config/secrets.yaml
