@@ -1,0 +1,5 @@
+platform: group
+name: Living Room Lights
+entities:
+  - light.hue_color_light_2_2
+  - light.hue_color_light_3_2

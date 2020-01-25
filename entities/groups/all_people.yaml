@@ -1,0 +1,5 @@
+name: All People
+entities:
+  - person.kevin
+  - person.autumn
+  - person.guest
