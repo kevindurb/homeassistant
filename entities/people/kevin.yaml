@@ -1,0 +1,5 @@
+id: kevin
+name: kevin
+user_id: kevindurb
+device_trackers:
+  - device_tracker.kevins_iphone
