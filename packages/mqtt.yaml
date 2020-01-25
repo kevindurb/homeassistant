@@ -1,6 +1,6 @@
 mqtt:
   discovery: true
-  broker: !secret mqtt_broker
+  broker: mosquitto
   birth_message:
     topic: 'hass/status'
     payload: 'online'
