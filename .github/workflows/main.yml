@@ -1,10 +1,70 @@
 name: CI
 on: [push]
 jobs:
-  check:
+  check-stable:
     runs-on: ubuntu-latest
     container:
       image: homeassistant/home-assistant:stable
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Copy config into place
+        run: cp -R $GITHUB_WORKSPACE/. /config/
+
+      - name: Move fake secrets into config
+        run: mv /config/.stubs/secrets.yaml /config/secrets.yaml
+
+      - name: Check config
+        run: python -m homeassistant --script check_config --config /config --files
+  check-beta:
+    runs-on: ubuntu-latest
+    container:
+      image: homeassistant/home-assistant:beta
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Copy config into place
+        run: cp -R $GITHUB_WORKSPACE/. /config/
+
+      - name: Move fake secrets into config
+        run: mv /config/.stubs/secrets.yaml /config/secrets.yaml
+
+      - name: Check config
+        run: python -m homeassistant --script check_config --config /config --files
+  check-dev:
+    runs-on: ubuntu-latest
+    container:
+      image: homeassistant/home-assistant:dev
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Copy config into place
+        run: cp -R $GITHUB_WORKSPACE/. /config/
+
+      - name: Move fake secrets into config
+        run: mv /config/.stubs/secrets.yaml /config/secrets.yaml
+
+      - name: Check config
+        run: python -m homeassistant --script check_config --config /config --files
+  check-rc:
+    runs-on: ubuntu-latest
+    container:
+      image: homeassistant/home-assistant:rc
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Copy config into place
+        run: cp -R $GITHUB_WORKSPACE/. /config/
+
+      - name: Move fake secrets into config
+        run: mv /config/.stubs/secrets.yaml /config/secrets.yaml
+
+      - name: Check config
+        run: python -m homeassistant --script check_config --config /config --files
+  check-latest:
+    runs-on: ubuntu-latest
+    container:
+      image: homeassistant/home-assistant:latest
     steps:
       - uses: actions/checkout@v2
 
