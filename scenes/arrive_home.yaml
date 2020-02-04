@@ -1,7 +1,0 @@
----
-name: Arrive Home
-entities:
-  light.entry_hallway_light:
-    state: on
-    brightness: 255
-    color_temp: 370

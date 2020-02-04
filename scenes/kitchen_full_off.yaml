@@ -1,7 +1,0 @@
----
-name: Kitchen Full Off
-entities:
-  light.kitchen_lights:
-    state: off
-    brightness: 0
-    color_temp: 370

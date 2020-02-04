@@ -1,7 +1,0 @@
----
-name: Bedroom Full Off
-entities:
-  light.master_bedroom_lights:
-    state: off
-    brightness: 0
-    color_temp: 370
