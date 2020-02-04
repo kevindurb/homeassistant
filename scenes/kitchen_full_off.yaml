@@ -1,5 +1,5 @@
 ---
-name: Kitchen Full On
+name: Kitchen Full Off
 entities:
   light.kitchen_lights:
     state: off
