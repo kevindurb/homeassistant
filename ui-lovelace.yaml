@@ -1,3 +1,6 @@
 ---
 title: Home
-views: !include_dir_list ./lovelace/views
+views:
+  - !include ./lovelace/views/cameras.yaml
+  - !include ./lovelace/views/home.yaml
+  - !include ./lovelace/views/lights.yaml

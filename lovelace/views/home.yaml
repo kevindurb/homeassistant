@@ -4,10 +4,6 @@ title: Home
 badges:
   - entity: person.kevin
   - entity: person.autumn
-  - entity: binary_sensor.ecolink_garage_door_tilt_sensor_sensor
 cards:
   - !include ../cards/alarm_control_panel.yaml
   - !include ../cards/dark_sky.yaml
-  - !include ../cards/living_room_lights.yaml
-  - !include ../cards/kitchen_lights.yaml
-  - !include ../cards/master_bedroom_lights.yaml

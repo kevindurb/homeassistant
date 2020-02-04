@@ -1,0 +1,7 @@
+---
+path: lights
+title: Lights
+cards:
+  - !include ../cards/living_room_lights.yaml
+  - !include ../cards/kitchen_lights.yaml
+  - !include ../cards/master_bedroom_lights.yaml
