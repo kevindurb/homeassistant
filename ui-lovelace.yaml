@@ -4,3 +4,4 @@ views:
   - !include ./lovelace/views/cameras.yaml
   - !include ./lovelace/views/home.yaml
   - !include ./lovelace/views/lights.yaml
+  - !include ./lovelace/views/stats.yaml
