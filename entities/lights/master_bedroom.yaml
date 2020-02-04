@@ -1,4 +1,6 @@
 platform: group
 name: Master Bedroom Lights
 entities:
-  - light.hue_color_light_1
+  - light.kevins_night_stand_light
+  - light.autumns_night_stand_light
+  - light.bedroom_floor_lamp

@@ -1,7 +1,7 @@
 platform: group
 name: Kitchen Lights
 entities:
-  - light.ledvance_ed070400_1
-  - light.ledvance_27fd0300_1
-  - light.ledvance_d5f60300_1
-  - light.ledvance_71f70300_1
+  - light.kitchen_light_01
+  - light.kitchen_light_02
+  - light.kitchen_light_03
+  - light.kitchen_light_04
