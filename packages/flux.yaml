@@ -5,7 +5,7 @@ switch:
     sunset_colortemp: 3500
     stop_colortemp: 3000
     start_time: "7:00"
-    end_time: "22:00"
+    stop_time: "22:00"
     disable_brightness_adjust: true
     lights:
       - light.living_room_lights
