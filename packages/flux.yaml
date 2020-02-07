@@ -1,0 +1,7 @@
+---
+switch:
+  - platform: flux
+    lights:
+      - light.living_room_lights
+      - light.kitchen_lights
+      - light.bedroom_lights
