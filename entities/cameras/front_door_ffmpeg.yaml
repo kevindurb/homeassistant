@@ -1,3 +1,4 @@
 ---
 platform: ffmpeg
+name: "Front Door Camera Ffmpeg"
 input: !secret front_door_rtsp_url
