@@ -10,4 +10,4 @@ switch:
     lights:
       - light.living_room_lights
       - light.kitchen_lights
-      - light.bedroom_lights
+      - light.master_bedroom_lights
