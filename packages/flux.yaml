@@ -9,6 +9,8 @@ switch:
     mode: "mired"
     disable_brightness_adjust: true
     lights:
+      - light.autumns_night_stand_light
+      - light.kevins_night_stand_light
       - light.living_room_lights
       - light.kitchen_lights
-      - light.master_bedroom_lights
+      - light.bedroom_floor_lamp
