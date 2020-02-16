@@ -1,5 +1,8 @@
 ---
-platform: ffmpeg
+platform: onvif
 name: "Backyard Camera"
-input: !secret backyard_rtsp_url
+host: 192.168.0.201
+username: !secret backyard_onvif_username
+password: !secret backyard_onvif_password
+# input: !secret backyard_rtsp_url
 extra_arguments: -rtsp_transport udp
