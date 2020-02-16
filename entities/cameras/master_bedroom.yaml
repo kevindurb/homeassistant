@@ -1,5 +1,4 @@
 ---
-platform: mjpeg
+platform: ffmpeg
 name: "Master Bedroom Camera"
-still_image_url: !secret master_bedroom_still_url
-mjpeg_url: !secret master_bedroom_mjpeg_url
+input: !secret master_bedroom_rtsp_url

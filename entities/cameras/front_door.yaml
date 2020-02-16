@@ -1,5 +1,4 @@
 ---
-platform: mjpeg
+platform: ffmpeg
 name: "Front Door Camera"
-still_image_url: !secret front_door_still_url
-mjpeg_url: !secret front_door_mjpeg_url
+input: !secret front_door_rtsp_url

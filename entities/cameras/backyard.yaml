@@ -1,5 +1,4 @@
 ---
-platform: mjpeg
+platform: ffmpeg
 name: "Backyard Camera"
-still_image_url: !secret backyard_still_url
-mjpeg_url: !secret backyard_mjpeg_url
+input: !secret backyard_rtsp_url

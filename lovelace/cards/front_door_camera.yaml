@@ -1,5 +1,5 @@
 ---
 type: picture-entity
-entity: camera.front_door_camera_ffmpeg
+entity: camera.front_door_camera
 aspect_ratio: 50%
 image: 'https://www.home-assistant.io/images/merchandise/shirt-frontpage.png'
