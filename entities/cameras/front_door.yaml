@@ -2,3 +2,4 @@
 platform: ffmpeg
 name: "Front Door Camera"
 input: !secret front_door_rtsp_url
+extra_arguments: -rtsp_transport udp
