@@ -1,0 +1,2 @@
+#! /bin/bash
+ssh coruscant "cd /config/homeassistant;git pull"
