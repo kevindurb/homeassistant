@@ -8,5 +8,5 @@ action:
       snapshot_entities:
         - light.living_room_lights
         - light.kitchen_lights
-  - service: scene.apply
+  - service: scene.turn_on
     entitiy_id: scene.movie_time
