@@ -1,2 +1,5 @@
+---
 id: guest
 name: guest
+device_trackers:
+  - device_tracker.guest
