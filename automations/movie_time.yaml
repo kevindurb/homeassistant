@@ -1,6 +1,8 @@
 ---
 alias: "Movie Time"
 initial_state: false
+trigger:
+condition:
 action:
   - service: scene.create
     data:
