@@ -3,4 +3,4 @@ alias: "Reset Scene"
 initial_state: false
 action:
   - service: scene.turn_on
-    entitiy_id: scene.scene_restore
+    entity_id: scene.scene_restore

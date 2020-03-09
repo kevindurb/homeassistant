@@ -9,4 +9,4 @@ action:
         - light.living_room_lights
         - light.kitchen_lights
   - service: scene.turn_on
-    entitiy_id: scene.movie_time
+    entity_id: scene.movie_time
