@@ -1,7 +1,7 @@
 ---
 name: Alarm
 type: alarm-panel
-entity: alarm_control_panel.***REMOVED***_alarm_control_panel
+entity: alarm_control_panel.home_alarm_control_panel
 states:
   - arm_home
   - arm_away
