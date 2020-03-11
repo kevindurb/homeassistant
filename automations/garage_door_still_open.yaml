@@ -1,9 +1,14 @@
 ---
-alias: "Garage Door Still Open At Night"
+alias: "Garage Door Still Open"
 
 trigger:
-  platform: time
-  at: "21:00:00"
+  - platform: time
+    at: "21:00:00"
+
+  - platform: state
+    entity_id: person.autumn, person.kevin
+    from: 'home'
+    to: 'not_home'
 
 condition:
   condition: and
