@@ -3,7 +3,7 @@ alias: "Disarm In Morning"
 
 trigger:
   - platform: time
-    at: "6:00:00"
+    at: "06:00:00"
 
 condition:
   condition: and
