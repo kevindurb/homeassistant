@@ -1,0 +1,19 @@
+---
+alias: "Garage Door Still Open At Night"
+
+trigger:
+  platform: time
+  at: "21:00:00"
+
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: binary_sensor.garage_door
+      state: 'open'
+
+action:
+  - service: notify.notify
+    data:
+      title: 'Garage Door'
+      message: 'The garage door is still open.'
