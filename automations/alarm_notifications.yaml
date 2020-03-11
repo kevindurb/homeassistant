@@ -1,0 +1,11 @@
+---
+alias: "Alarm Notifications"
+trigger:
+  platform: state
+  entity_id: alarm_control_panel.home_alarm_control_panel
+condition:
+action:
+  - service: notify.notify
+    data_template:
+      title: 'Alarm System'
+      message: 'Alarm just went to {{trigger.to_state.state}} from {{trigger.from_state.state}}.'
