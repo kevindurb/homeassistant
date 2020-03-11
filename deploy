@@ -1,2 +1,2 @@
 #! /bin/bash
-ssh coruscant.durbin "cd /config/homeassistant;git pull"
+ssh kevindurb@coruscant.durbin "cd /config/homeassistant;git pull"
