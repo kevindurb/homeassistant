@@ -1,0 +1,17 @@
+---
+alias: "Arm Home At Night"
+
+trigger:
+  - platform: time
+    at: "21:00:00"
+
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: group.all_people
+      state: 'home'
+
+action:
+  - service: alarm_control_panel.alarm_arm_home
+    entity_id: alarm_control_panel.home_alarm_control_panel
