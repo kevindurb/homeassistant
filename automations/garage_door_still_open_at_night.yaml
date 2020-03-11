@@ -10,7 +10,7 @@ condition:
   conditions:
     - condition: state
       entity_id: binary_sensor.garage_door
-      state: 'open'
+      state: 'on'
 
 action:
   - service: notify.notify
