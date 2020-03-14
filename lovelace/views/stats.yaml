@@ -3,3 +3,4 @@ title: Stats
 path: stats
 cards:
   - !include ../cards/temperatures.yaml
+  - !include ../cards/batteries.yaml
