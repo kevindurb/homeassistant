@@ -1,6 +1,6 @@
 ---
 type: history-graph
-hours_to_show: 80
+hours_to_show: 168
 entities:
   - sensor.autumns_button_battery
   - sensor.kevins_button_battery
