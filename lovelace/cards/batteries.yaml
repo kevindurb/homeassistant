@@ -6,3 +6,5 @@ entities:
   - sensor.kevins_button_battery
   - sensor.garage_door_sensor_battery
   - sensor.kitchen_motion_sensor_battery
+  - sensor.kevins_phone_battery
+  - sensor.autumns_phone_battery

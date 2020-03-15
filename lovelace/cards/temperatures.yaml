@@ -4,3 +4,4 @@ entities:
   - sensor.autumns_button_temperature
   - sensor.kevins_button_temperature
   - sensor.kitchen_motion_detector_temperature
+  - sensor.garage_door_temperature
