@@ -1,5 +1,5 @@
 ---
-platform: ffmpeg
+platform: generic
 name: "Backyard Camera"
-input: !secret master_bedroom_rtsp_url
-extra_arguments: -rtsp_transport udp
+still_image_url: "http://motioneye:8765/picture/1/current/"
+verify_ssl: false
