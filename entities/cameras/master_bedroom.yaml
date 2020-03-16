@@ -1,5 +1,0 @@
----
-platform: ffmpeg
-name: "Master Bedroom Camera"
-input: !secret master_bedroom_rtsp_url
-extra_arguments: -rtsp_transport udp
