@@ -1,0 +1,5 @@
+---
+type: entities
+entities:
+  - automation.motion_turn_on_kitchen_lights
+  - automation.motion_turn_off_kitchen_lights

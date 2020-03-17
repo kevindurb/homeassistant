@@ -6,3 +6,4 @@ cards:
   - !include ../cards/kitchen_lights.yaml
   - !include ../cards/master_bedroom_lights.yaml
   - !include ../cards/baby_room_lights.yaml
+  - !include ../cards/kitchen_motion_automations.yaml

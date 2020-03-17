@@ -4,4 +4,3 @@ path: stats
 cards:
   - !include ../cards/indoor_temperatures.yaml
   - !include ../cards/outdoor_temperatures.yaml
-  - !include ../cards/batteries.yaml
