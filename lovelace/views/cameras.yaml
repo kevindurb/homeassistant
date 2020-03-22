@@ -6,3 +6,4 @@ badges: []
 cards:
   - !include ../cards/backyard_camera.yaml
   - !include ../cards/front_door_camera.yaml
+  - !include ../cards/garage_camera.yaml
