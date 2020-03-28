@@ -6,5 +6,5 @@ cards:
   - !include ../cards/kitchen_lights.yaml
   - !include ../cards/master_bedroom_night_stand_lights.yaml
   - !include ../cards/master_bedroom_floor_lamp.yaml
-  - !include ../cards/baby_room_lights.yaml
+  - !include ../cards/office_lights.yaml
   - !include ../cards/kitchen_motion_automations.yaml

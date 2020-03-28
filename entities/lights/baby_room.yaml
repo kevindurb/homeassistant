@@ -1,6 +1,0 @@
----
-platform: group
-name: Baby Room Lights
-entities:
-  - light.baby_room_light_01
-  - light.baby_room_light_02
