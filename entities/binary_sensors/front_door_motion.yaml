@@ -1,6 +1,0 @@
----
-platform: ffmpeg_motion
-name: "Front Door Motion"
-input: !secret front_door_rtsp_url
-changes: 30
-extra_arguments: -rtsp_transport udp
