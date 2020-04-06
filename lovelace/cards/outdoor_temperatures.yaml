@@ -3,4 +3,4 @@ type: history-graph
 title: 'Outdoor Temperatures'
 entities:
   - sensor.garage_door_temperature
-  - sensor.dark_sky_temperature
+  - sensor.openweathermap_temperature

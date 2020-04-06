@@ -6,4 +6,4 @@ badges:
   - entity: person.autumn
 cards:
   - !include ../cards/alarm_control_panel.yaml
-  - !include ../cards/dark_sky.yaml
+  - !include ../cards/weather.yaml
