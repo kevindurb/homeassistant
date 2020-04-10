@@ -1,0 +1,6 @@
+---
+path: office
+title: Office
+cards:
+  - !include ../cards/office_lights.yaml
+  - !include ../cards/hoth.yaml
