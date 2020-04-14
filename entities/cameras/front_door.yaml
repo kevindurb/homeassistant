@@ -1,5 +1,6 @@
 ---
 platform: generic
 name: "Front Door Camera"
-still_image_url: "http://motioneye:8765/picture/2/current/"
+still_image_url: "http://motioneye:8765/picture/3/current/"
+stream_source: "http://motioneye:8083"
 verify_ssl: false
