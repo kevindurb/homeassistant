@@ -2,5 +2,4 @@
 platform: generic
 name: "Garage Camera"
 still_image_url: "http://motioneye:8765/picture/1/current/"
-stream_source: "http://motioneye:8081"
 verify_ssl: false
