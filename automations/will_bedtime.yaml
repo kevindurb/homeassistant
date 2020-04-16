@@ -9,5 +9,5 @@ action:
   - service: scene.turn_on
     entity_id:
       - scene.master_bedroom_dim
-      - scene.kitchen_dim
+      - scene.kitchen_off
       - scene.living_room_dim

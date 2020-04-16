@@ -1,0 +1,8 @@
+name: "Kitchen Off"
+entities:
+  light.kitchen_lights:
+    state: off
+  automation.motion_turn_on_kitchen_lights:
+    state: off
+  automation.motion_turn_off_kitchen_lights:
+    state: off
