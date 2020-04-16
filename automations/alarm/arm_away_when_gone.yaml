@@ -3,8 +3,8 @@ alias: "Arm Away When gone"
 trigger:
   platform: state
   entity_id: group.all_people
-  from: 'home'
-  to: 'not_home'
+  from: "home"
+  to: "not_home"
 condition:
 action:
   - service: alarm_control_panel.alarm_arm_away

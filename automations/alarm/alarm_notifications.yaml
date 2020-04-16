@@ -1,37 +1,36 @@
 ---
 alias: "Alarm Notifications"
 trigger:
+  - platform: state
+    entity_id: alarm_control_panel.home_alarm_control_panel
+    from: "disarmed"
+    to: "armed_away"
+  - platform: state
+    entity_id: alarm_control_panel.home_alarm_control_panel
+    from: "disarmed"
+    to: "armed_home"
 
   - platform: state
     entity_id: alarm_control_panel.home_alarm_control_panel
-    from: 'disarmed'
-    to: 'armed_away'
+    from: "armed_home"
+    to: "disarmed"
   - platform: state
     entity_id: alarm_control_panel.home_alarm_control_panel
-    from: 'disarmed'
-    to: 'armed_home'
+    from: "armed_home"
+    to: "armed_away"
 
   - platform: state
     entity_id: alarm_control_panel.home_alarm_control_panel
-    from: 'armed_home'
-    to: 'disarmed'
+    from: "armed_away"
+    to: "armed_home"
   - platform: state
     entity_id: alarm_control_panel.home_alarm_control_panel
-    from: 'armed_home'
-    to: 'armed_away'
-
-  - platform: state
-    entity_id: alarm_control_panel.home_alarm_control_panel
-    from: 'armed_away'
-    to: 'armed_home'
-  - platform: state
-    entity_id: alarm_control_panel.home_alarm_control_panel
-    from: 'armed_away'
-    to: 'disarmed'
+    from: "armed_away"
+    to: "disarmed"
 
 condition:
 action:
   - service: notify.notify
     data_template:
-      title: 'Alarm System'
-      message: 'Alarm just went to {{trigger.to_state.state}} (was {{trigger.from_state.state}}).'
+      title: "Alarm System"
+      message: "Alarm just went to {{trigger.to_state.state}} (was {{trigger.from_state.state}})."

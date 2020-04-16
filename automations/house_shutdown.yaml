@@ -6,11 +6,11 @@ trigger:
 condition:
 
 action:
-  - service: scene.turn_on
+  - service: "scene.turn_on"
     entity_id:
-      - scene.living_room_dim
-  - service: light.turn_off
+      - "scene.living_room_dim"
+  - service: "light.turn_off"
     entity_id:
-      - light.kitchen_lights
-      - light.office_lights
-      - light.master_bedroom_lights
+      - "light.kitchen_lights"
+      - "light.office_lights"
+      - "light.master_bedroom_lights"

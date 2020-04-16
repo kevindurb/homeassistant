@@ -7,18 +7,18 @@ trigger:
 
   - platform: state
     entity_id: person.autumn, person.kevin
-    from: 'home'
-    to: 'not_home'
+    from: "home"
+    to: "not_home"
 
 condition:
   condition: and
   conditions:
     - condition: state
       entity_id: binary_sensor.garage_door
-      state: 'on'
+      state: "on"
 
 action:
   - service: notify.notify
     data:
-      title: 'Garage Door'
-      message: 'The garage door is still open.'
+      title: "Garage Door"
+      message: "The garage door is still open."

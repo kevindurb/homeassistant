@@ -10,7 +10,7 @@ condition:
   conditions:
     - condition: state
       entity_id: group.all_people
-      state: 'home'
+      state: "home"
 
 action:
   - service: alarm_control_panel.alarm_arm_home

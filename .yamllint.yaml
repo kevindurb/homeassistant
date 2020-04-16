@@ -1,2 +1,5 @@
 rules:
-  line-length: disable
+  line-length: "disable"
+  quoted-strings:
+    quote-type: "double"
+    required: false

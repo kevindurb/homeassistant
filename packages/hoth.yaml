@@ -2,5 +2,5 @@
 switch:
   - name: hoth
     platform: wake_on_lan
-    mac: '04:92:26:bf:96:cf'
+    mac: "04:92:26:bf:96:cf"
     host: hoth

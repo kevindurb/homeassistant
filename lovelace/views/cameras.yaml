@@ -1,7 +1,7 @@
 ---
 title: cameras
 path: cameras
-icon: ''
+icon: ""
 badges: []
 cards:
   - !include ../cards/backyard_camera.yaml
