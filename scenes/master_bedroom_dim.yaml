@@ -1,0 +1,6 @@
+---
+name: "Master Bedroom Dim"
+entities:
+  light.master_bedroom_lights:
+    brightness: 10
+    state: on

@@ -1,0 +1,6 @@
+---
+name: "Master Bedroom Bright"
+entities:
+  light.master_bedroom_lights:
+    brightness: 255
+    state: on

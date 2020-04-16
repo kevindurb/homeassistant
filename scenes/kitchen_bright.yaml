@@ -1,0 +1,9 @@
+---
+name: "Kitchen Bright"
+entities:
+  light.kitchen.default:
+    brightness: 255
+  automation.motion_turn_on_kitchen_lights:
+    state: on
+  automation.motion_turn_off_kitchen_lights:
+    state: on
