@@ -20,3 +20,13 @@ repos:
     rev: v1.22.1
     hooks:
       - id: yamllint
+
+  - repo: local
+    hooks:
+      - id: hass
+        name: hass
+        language: python
+        pass_filenames: false
+        entry: hass --script check_config --config ./ --files
+        additional_dependencies:
+          - homeassistant
