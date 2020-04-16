@@ -2,6 +2,7 @@
 name: "Living Room Bright"
 entities:
   light.living_room_lights:
+    color_temp: 350
     brightness: 255
     state: on
   automation.motion_turn_on_kitchen_lights:
