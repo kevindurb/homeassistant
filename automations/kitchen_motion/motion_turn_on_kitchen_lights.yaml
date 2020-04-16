@@ -7,5 +7,3 @@ trigger:
 action:
   service: light.turn_on
   entity_id: light.kitchen_lights
-  data_template:
-    brightness: "{% if now().hour > 21 or now().hour < 6 %}64{% else %}255{% endif %}"

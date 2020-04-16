@@ -1,0 +1,8 @@
+---
+name: Will Bedtime
+type: button
+tap_action:
+  action: call-service
+  service: automation.trigger
+  service_data:
+    entity_id: automation.will_bedtime

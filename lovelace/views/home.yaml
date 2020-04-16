@@ -7,3 +7,6 @@ badges:
 cards:
   - !include ../cards/alarm_control_panel.yaml
   - !include ../cards/weather.yaml
+  - !include ../cards/house_on.yaml
+  - !include ../cards/house_shutdown.yaml
+  - !include ../cards/will_bedtime.yaml
