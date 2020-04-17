@@ -2,6 +2,6 @@
 - name: Converge
   hosts: all
   tasks:
-    - name: 'Include hass'
+    - name: "Include homeassistant"
       include_role:
-        name: 'hass'
+        name: "homeassistant"
