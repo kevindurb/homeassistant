@@ -1,0 +1,14 @@
+---
+alias: 'Reenable Kitchen Motion Lights'
+
+trigger:
+  - platform: 'time'
+    at: '05:00:00'
+
+condition:
+
+action:
+  - service: 'automation.turn_on'
+    entity_id: 'automation.motion_turn_on_kitchen_lights'
+  - service: 'automation.turn_on'
+    entity_id: 'automation.motion_turn_off_kitchen_lights'

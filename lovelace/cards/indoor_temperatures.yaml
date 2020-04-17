@@ -1,7 +1,0 @@
----
-type: history-graph
-title: "Indoor Temperatures"
-entities:
-  - sensor.autumns_button_temperature
-  - sensor.kevins_button_temperature
-  - sensor.kitchen_motion_detector_temperature

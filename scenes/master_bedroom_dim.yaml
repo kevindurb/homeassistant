@@ -1,7 +1,0 @@
----
-name: "Master Bedroom Dim"
-entities:
-  light.master_bedroom_lights:
-    color_temp: 400
-    brightness: 10
-    state: on

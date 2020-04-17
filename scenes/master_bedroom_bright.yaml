@@ -1,7 +1,0 @@
----
-name: "Master Bedroom Bright"
-entities:
-  light.master_bedroom_lights:
-    color_temp: 350
-    brightness: 255
-    state: on

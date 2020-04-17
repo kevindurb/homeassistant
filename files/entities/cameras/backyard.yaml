@@ -1,0 +1,5 @@
+---
+platform: generic
+name: 'Backyard Camera'
+still_image_url: 'http://motioneye:8765/picture/2/current/'
+verify_ssl: false

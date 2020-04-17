@@ -1,9 +1,0 @@
----
-alias: "Motion Turn On Kitchen Lights"
-trigger:
-  platform: state
-  entity_id: binary_sensor.kitchen_motion_detector
-  to: "on"
-action:
-  service: light.turn_on
-  entity_id: light.kitchen_lights

@@ -1,0 +1,20 @@
+---
+alias: 'House On'
+
+trigger:
+  - platform: time
+    at: '08:00:00'
+
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: group.all_people
+      state: 'home'
+
+action:
+  - service: scene.turn_on
+    entity_id:
+      - scene.master_bedroom_bright
+      - scene.kitchen_bright
+      - scene.living_room_bright

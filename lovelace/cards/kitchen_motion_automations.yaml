@@ -1,7 +1,0 @@
----
-type: entities
-title: "Kitchen Motion Automations"
-show_header_toggle: true
-entities:
-  - automation.motion_turn_on_kitchen_lights
-  - automation.motion_turn_off_kitchen_lights

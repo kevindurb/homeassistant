@@ -1,0 +1,12 @@
+---
+alias: 'Autumns Night Stand Button'
+trigger:
+  platform: device
+  device_id: b975e5976ffa4bb5a782c12486960b1b
+  domain: zha
+  type: remote_button_short_press
+  subtype: remote_button_short_press
+condition:
+action:
+  - service: light.toggle
+    entity_id: light.autumns_night_stand_light

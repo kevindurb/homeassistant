@@ -1,0 +1,13 @@
+---
+name: 'Living Room Dim'
+entities:
+  light.living_room_lights:
+    brightness: 10
+    color_temp: 400
+    state: on
+  light.kitchen_lights:
+    state: off
+  automation.motion_turn_on_kitchen_lights:
+    state: off
+  automation.motion_turn_off_kitchen_lights:
+    state: off

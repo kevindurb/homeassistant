@@ -1,0 +1,17 @@
+---
+switch:
+  - platform: flux
+    name: 'Home Flux'
+    start_colortemp: 3000
+    sunset_colortemp: 3000
+    stop_colortemp: 2000
+    start_time: '7:00'
+    stop_time: '22:00'
+    mode: 'mired'
+    disable_brightness_adjust: true
+    lights:
+      - light.autumns_night_stand_light
+      - light.kevins_night_stand_light
+      - light.living_room_lights
+      - light.kitchen_lights
+      - light.bedroom_floor_lamp

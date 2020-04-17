@@ -1,6 +1,0 @@
----
-type: "history-graph"
-title: "Outdoor Temperatures"
-entities:
-  - "sensor.garage_door_temperature"
-  - "sensor.owm_temperature"
