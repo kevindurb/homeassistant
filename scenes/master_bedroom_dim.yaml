@@ -1,7 +1,9 @@
 ---
 name: "Master Bedroom Dim"
 entities:
-  light.master_bedroom_lights:
+  light.master_bedroom_night_stand_lights:
+    state: off
+  light.bedroom_floor_lamp:
     color_temp: 400
     brightness: 10
     state: on

@@ -2,12 +2,19 @@
 alias: "Will Bedtime"
 
 trigger:
+  - platform: time
+    at: "19:00:00"
 
 condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: group.all_people
+      state: "home"
 
 action:
   - service: scene.turn_on
     entity_id:
       - scene.master_bedroom_dim
-      - scene.kitchen_off
+      - scene.kitchen_dim
       - scene.living_room_dim

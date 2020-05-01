@@ -5,7 +5,3 @@ entities:
     state: on
     brightness: 255
     color_temp: 350
-  automation.motion_turn_on_kitchen_lights:
-    state: on
-  automation.motion_turn_off_kitchen_lights:
-    state: on

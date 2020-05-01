@@ -3,7 +3,7 @@ alias: "House On"
 
 trigger:
   - platform: time
-    at: "08:00:00"
+    at: "06:30:00"
 
 condition:
   condition: and
@@ -15,6 +15,5 @@ condition:
 action:
   - service: scene.turn_on
     entity_id:
-      - scene.master_bedroom_bright
       - scene.kitchen_bright
       - scene.living_room_bright

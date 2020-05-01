@@ -2,8 +2,15 @@
 alias: "House Shutdown"
 
 trigger:
+  - platform: time
+    at: "00:00:00"
 
 condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: group.all_people
+      state: "home"
 
 action:
   - service: "scene.turn_on"
