@@ -10,3 +10,4 @@ cards:
   - !include ../cards/house_on.yaml
   - !include ../cards/house_shutdown.yaml
   - !include ../cards/will_bedtime.yaml
+  - !include ../cards/movie_time.yaml
