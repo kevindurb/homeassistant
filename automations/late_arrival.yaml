@@ -1,5 +1,5 @@
 ---
-alias: "Rearm After Arrival At Night"
+alias: "Late Arrival"
 
 trigger:
   platform: state

@@ -1,9 +1,9 @@
 ---
-alias: "Disarm In Morning"
+alias: "Bedtime"
 
 trigger:
   - platform: time
-    at: "06:00:00"
+    at: "21:00:00"
 
 condition:
   condition: and
@@ -13,5 +13,5 @@ condition:
       state: "home"
 
 action:
-  - service: alarm_control_panel.alarm_disarm
+  - service: alarm_control_panel.alarm_arm_home
     entity_id: alarm_control_panel.home_alarm_control_panel

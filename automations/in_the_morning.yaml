@@ -1,16 +1,19 @@
 ---
-alias: "Disarm When Home"
+alias: "In The Morning"
+
 trigger:
-  platform: state
-  entity_id: group.all_people
-  from: "not_home"
-  to: "home"
+  - platform: time
+    at: "06:00:00"
+
 condition:
   condition: and
   conditions:
     - condition: state
-      entity_id: alarm_control_panel.home_alarm_control_panel
-      state: armed_away
+      entity_id: group.all_people
+      state: "home"
+
 action:
   - service: alarm_control_panel.alarm_disarm
     entity_id: alarm_control_panel.home_alarm_control_panel
+  - service: automation.turn_on
+    entity_id: automation.house_on

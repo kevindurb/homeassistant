@@ -2,18 +2,16 @@
 alias: "House On"
 
 trigger:
-  - platform: time
-    at: "06:30:00"
+  - platform: state
+    entity_id: binary_sensor.kitchen_motion_detector
+    to: "on"
 
 condition:
-  condition: and
-  conditions:
-    - condition: state
-      entity_id: group.all_people
-      state: "home"
 
 action:
   - service: scene.turn_on
     entity_id:
       - scene.kitchen_bright
       - scene.living_room_bright
+  - service: automation.turn_off
+    entity_id: automation.house_on

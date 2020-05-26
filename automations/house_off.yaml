@@ -1,9 +1,9 @@
 ---
-alias: "House Shutdown"
+alias: "House Off"
 
 trigger:
   - platform: time
-    at: "00:00:00"
+    at: "22:00:00"
 
 condition:
   condition: and
@@ -19,5 +19,3 @@ action:
   - service: "light.turn_off"
     entity_id:
       - "light.kitchen_lights"
-      - "light.office_lights"
-      - "light.master_bedroom_lights"
