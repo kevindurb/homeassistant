@@ -1,2 +1,0 @@
-#! /bin/bash
-ssh kevindurb@rpi05.durbin "cd /config/homeassistant;git pull"

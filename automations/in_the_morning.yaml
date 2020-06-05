@@ -3,7 +3,7 @@ alias: "In The Morning"
 
 trigger:
   - platform: time
-    at: "06:00:00"
+    at: "05:00:00"
 
 condition:
   condition: and
