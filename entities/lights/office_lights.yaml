@@ -4,3 +4,5 @@ name: Office Lights
 entities:
   - light.office_lamp_01
   - light.office_lamp_02
+  - light.office_light_01
+  - light.office_light_02
