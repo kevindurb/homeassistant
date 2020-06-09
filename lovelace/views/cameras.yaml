@@ -4,6 +4,22 @@ path: cameras
 icon: ""
 badges: []
 cards:
-  - !include ../cards/backyard_camera.yaml
-  - !include ../cards/front_door_camera.yaml
-  - !include ../cards/garage_camera.yaml
+  - type: picture-entity
+    entity: camera.backyard_camera
+    aspect_ratio: 50%
+
+  - type: picture-entity
+    entity: camera.front_door_camera
+    aspect_ratio: 50%
+
+  - type: picture-entity
+    entity: camera.side_yard_camera
+    aspect_ratio: 50%
+
+  - type: picture-entity
+    entity: camera.back_door_camera
+    aspect_ratio: 50%
+
+  - type: picture-entity
+    entity: camera.garage_camera
+    aspect_ratio: 50%

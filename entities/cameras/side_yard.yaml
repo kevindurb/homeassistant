@@ -1,7 +1,7 @@
 ---
 - platform: ffmpeg
-  name: "Front Door Camera"
-  input: !secret camera_03
+  name: "Side Yard Camera"
+  input: !secret camera_04
 
 - platform: proxy
   entity_id: camera.back_door_camera

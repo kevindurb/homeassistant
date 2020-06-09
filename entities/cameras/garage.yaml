@@ -1,5 +1,8 @@
 ---
-platform: generic
-name: "Garage Camera"
-still_image_url: "http://motioneye:8765/picture/1/current/"
-verify_ssl: false
+- platform: ffmpeg
+  name: "Garage Camera"
+  input: !secret camera_01
+
+- platform: proxy
+  entity_id: camera.garage_camera
+  cache_images: true
