@@ -1,0 +1,9 @@
+---
+alias: "Restart Webhook"
+trigger:
+  - platform: webhook
+    webhook_id: restart
+
+condition:
+action:
+  - service: homeassistant.restart
