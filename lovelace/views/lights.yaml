@@ -2,7 +2,10 @@
 path: lights
 title: Lights
 cards:
-  - !include ../cards/living_room_lights.yaml
-  - !include ../cards/kitchen_lights.yaml
-  - !include ../cards/master_bedroom_night_stand_lights.yaml
-  - !include ../cards/master_bedroom_floor_lamp.yaml
+  - title: All Lights
+    type: entities
+    entities:
+      - light.living_room_lights
+      - light.kitchen_lights
+      - light.master_bedroom_lights
+      - light.fire_place_lights

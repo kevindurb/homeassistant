@@ -1,0 +1,6 @@
+---
+platform: group
+name: Fire Place Lights
+entities:
+  - light.fire_place_light_01
+  - light.fire_place_light_02
