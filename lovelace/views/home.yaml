@@ -7,3 +7,10 @@ badges:
 cards:
   - !include ../cards/alarm_control_panel.yaml
   - !include ../cards/weather.yaml
+  - title: All Lights
+    type: entities
+    entities:
+      - light.living_room_lights
+      - light.kitchen_lights
+      - light.master_bedroom_lights
+      - light.fire_place_lights
