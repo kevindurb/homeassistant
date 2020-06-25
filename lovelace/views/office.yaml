@@ -1,5 +1,0 @@
----
-path: office
-title: Office
-cards:
-  - !include ../cards/office_lights.yaml

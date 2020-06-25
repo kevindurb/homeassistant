@@ -14,3 +14,4 @@ cards:
       - light.kitchen_lights
       - light.master_bedroom_lights
       - light.fire_place_lights
+      - light.office_lights

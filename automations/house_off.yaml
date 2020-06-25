@@ -1,21 +1,22 @@
 ---
-alias: "House Off"
+alias: 'House Off'
 
 trigger:
   - platform: time
-    at: "22:00:00"
+    at: '22:00:00'
 
 condition:
   condition: and
   conditions:
     - condition: state
       entity_id: group.all_people
-      state: "home"
+      state: 'home'
 
 action:
-  - service: "scene.turn_on"
+  - service: 'scene.turn_on'
     entity_id:
-      - "scene.living_room_dim"
-  - service: "light.turn_off"
+      - 'scene.living_room_dim'
+  - service: 'light.turn_off'
     entity_id:
-      - "light.kitchen_lights"
+      - light.kitchen_lights
+      - light.office_lights

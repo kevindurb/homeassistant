@@ -3,5 +3,4 @@ title: Home
 views:
   - !include ./lovelace/views/home.yaml
   - !include ./lovelace/views/cameras.yaml
-  - !include ./lovelace/views/office.yaml
   - !include ./lovelace/views/stats.yaml
